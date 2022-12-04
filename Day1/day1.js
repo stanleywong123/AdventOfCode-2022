@@ -1,4 +1,3 @@
-import { readFileSync } from "fs";
 import { convertInputFile } from "../HelperFunctions/ReadInputFile.js";
 const input = convertInputFile("input.txt")
   .split(/\r\n\r\n/)
