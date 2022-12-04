@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
-const input = readFileSync("input.txt", "utf-8")
-  .toString()
+import { convertInputFile } from "../HelperFunctions/ReadInputFile.js";
+const input = convertInputFile("input.txt")
   .split(/\r\n\r\n/)
   .map((x) => {
     return x.split(/\r\n/).map((y) => {
