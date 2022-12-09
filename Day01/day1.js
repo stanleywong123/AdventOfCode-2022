@@ -1,5 +1,5 @@
 import { convertInputFile } from "../HelperFunctions/ReadInputFile.js";
-const input = convertInputFile(1)
+const input = convertInputFile("01")
   .split(/\r\n\r\n/)
   .map((x) => {
     return x.split(/\r\n/).map((y) => {

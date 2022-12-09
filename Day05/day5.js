@@ -3,8 +3,8 @@ import {
   convertTestInputFile,
 } from "../HelperFunctions/ReadInputFile.js";
 
-const testInput = convertTestInputFile(5).replace(/\r/g, "").trimEnd();
-const input = convertInputFile(5).replace(/\r/g, "").trimEnd();
+const testInput = convertTestInputFile("05").replace(/\r/g, "").trimEnd();
+const input = convertInputFile("05").replace(/\r/g, "").trimEnd();
 
 const transpose = (arr) => {
   for (let i = 0; i < arr.length; i++) {

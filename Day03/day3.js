@@ -3,8 +3,8 @@ import {
   convertTestInputFile,
 } from "../HelperFunctions/ReadInputFile.js";
 
-const testInput = convertTestInputFile(3).split(/\r\n/);
-const input = convertInputFile(3).split(/\r\n/);
+const testInput = convertTestInputFile("03").split(/\r\n/);
+const input = convertInputFile("03").split(/\r\n/);
 
 const priorities = {
   a: 1,

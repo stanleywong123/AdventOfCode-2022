@@ -3,8 +3,8 @@ import {
   convertInputFile,
 } from "../HelperFunctions/ReadInputFile.js";
 
-const input = convertInputFile(7);
-const testInput = convertTestInputFile(7);
+const input = convertInputFile("07");
+const testInput = convertTestInputFile("07");
 
 const createTree = (input) => {
   const tree = {
@@ -95,7 +95,7 @@ const calcSize = (node, directoryCallback) => {
 
 const part1 = (input) => {
   const tree = createTree(input.split(/\r\n/));
-  printTree(tree);
+  //printTree(tree);
   let sumSmallFolder = 0;
   calcSize(tree, (name, size) => {
     if (size < 100000) {
@@ -105,8 +105,8 @@ const part1 = (input) => {
   console.log("sum", sumSmallFolder);
 };
 
-// part1(testInput);
-// part1(input);
+part1(testInput);
+part1(input);
 
 const part2 = (input) => {
   const tree = createTree(input.split(/\r\n/));
@@ -120,7 +120,6 @@ const part2 = (input) => {
       neededSpace = 30000000 - unusedSpace;
     }
   });
-  console.log("needed space", neededSpace);
   //   printTree(tree);
   calcSize(tree, (name, size) => {
     if (size > neededSpace) {

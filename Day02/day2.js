@@ -8,8 +8,8 @@ let drawPoints = 3;
 const formatInputFile = (inputFile) => {
   return inputFile.split(/\r\n/);
 };
-const testInput = convertTestInputFile(2);
-const input = convertInputFile(2);
+const testInput = convertTestInputFile("02");
+const input = convertInputFile("02");
 const shapePoints = {
   A: 1,
   B: 2,

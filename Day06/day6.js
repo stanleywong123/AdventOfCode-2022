@@ -2,8 +2,8 @@ import {
   convertInputFile,
   convertTestInputFile,
 } from "../HelperFunctions/ReadInputFile.js";
-const testInput = convertTestInputFile(6);
-const input = convertInputFile(6);
+const testInput = convertTestInputFile("06");
+const input = convertInputFile("06");
 
 const findMarker = (dataStreamBuffer) => {
   return /(.).*\1/.test(dataStreamBuffer);

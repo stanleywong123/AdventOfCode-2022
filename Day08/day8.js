@@ -3,8 +3,8 @@ import {
   convertInputFile,
 } from "../HelperFunctions/ReadInputFile.js";
 
-const input = convertInputFile(8);
-const testInput = convertTestInputFile(8);
+const input = convertInputFile("08");
+const testInput = convertTestInputFile("08");
 
 const checkVisibility = (treeY, treeX, y, x, grid, visibleTrees) => {
   setVisible(treeY, treeX, visibleTrees);

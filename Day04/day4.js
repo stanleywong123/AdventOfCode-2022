@@ -3,8 +3,8 @@ import {
   convertTestInputFile,
 } from "../HelperFunctions/ReadInputFile.js";
 
-const testInput = convertTestInputFile(4).split(/\r\n/);
-const input = convertInputFile(4).split(/\r\n/);
+const testInput = convertTestInputFile("04").split(/\r\n/);
+const input = convertInputFile("04").split(/\r\n/);
 
 const sectionsCompletelyOverlap = (firstSection, secondSection) => {
   let firstStart;
@@ -38,8 +38,6 @@ const part1 = (sections) => {
       containedSections++;
     }
   });
-
-  console.log(containedSections);
 };
 
 const sectionsOverlap = (firstSection, secondSection) => {
@@ -75,12 +73,10 @@ const part2 = (sections) => {
   sections.forEach((section) => {
     [firstSection, secondSection] = section.split(",");
     if (sectionsOverlap(firstSection, secondSection)) {
-      console.log(`${firstSection}, ${secondSection}`);
       containedSections++;
     }
-
-    console.log(containedSections);
   });
+  console.log(containedSections);
 };
 
 part1(testInput);
